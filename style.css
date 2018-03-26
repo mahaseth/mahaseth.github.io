@@ -1,0 +1,234 @@
+
+
+:root{
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Bottom left text */
+.bottom-right {
+    position: absolute;
+    top: 0.00001%;
+    right:1%;
+}
+
+body {margin:0;}
+
+ul.ulist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(28, 33, 32,0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li.list {
+    float: left;
+}
+
+li.list a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+li.list a:hover :not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+img{
+     width: 98vw;
+     height: 120vh;
+    
+}
+
+.explore {  
+    border: none;
+    opacity: 0.5;
+    padding: 1vw 5vw;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    border-style: solid;
+    border-width: 0.2vw;
+    margin-left: 12vw;
+    background-color: rgba(28, 33, 32,0.5);
+
+}
+.name{
+     border: none;
+    opacity: 0.5;
+    padding: 1vw 5vw;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    border-style: solid;
+    border-width: 0.2vw;
+    margin-left: 12vw;
+    background-color: rgba(28, 33, 32,0.5);
+}
+button:hover:not(.active) {
+    background-color: white;
+     -webkit-transition: all 2s;
+     opacity: 0.8;
+     color: black;
+
+}
+
+
+.im-text{
+    position:absolute;
+    top:25%;
+    left:25%;
+    right:25%;
+    color:white;
+    display:block;
+    text-align: center;
+    float:left;
+
+}
+hr.style2 {
+    border-top: 3px double #8c8b8b;
+}
+.text{
+    font-size: 2rem;
+}
+.info{
+    font-size: 5rem;
+}
+.heading-abt-me{
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom:5vh;
+    font-size: 3rem;
+}
+.abt-me{
+    text-align: center;
+    font-size: 3rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+}
+
+.aw{
+   background-color: rgb(123, 208, 193)
+}
+.ex{
+  background-color:rgb(126, 202, 246);
+}
+.e{
+    background-color:rgb(242, 132, 158);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* for flexboxes */
+.row {
+    display: flex;
+    flex-wrap:wrap;
+
+  text-align: left;
+  line-height:3vh;
+  font-size: 2rem;
+  padding-left: 1vw;
+  padding-right: 0.4vw;
+  justify-content: space-around
+}
+
+/* Create four equal columns */
+.column {
+    flex: 25%;
+    padding: 2vw;
+    font-size: 2rem;
+}
+
+
+/* On screens that are 992px wide or less, go from 3 columns to 1 columns */
+@media screen and (max-width: 992px) and (min-width: 481px) {
+    .column {
+        flex: 50%;
+    }
+      :root{
+        font-size:7px;
+    }
+     img{
+     width: 95vw;
+     height: 120vh;
+    
+}
+}
+@media screen and (max-width: 480px) and (min-width: 221px){
+    body {
+        background-color: lightgreen;
+    }
+    :root{
+        font-size:5px;
+    }
+   
+     .column {
+        flex: 100%;
+    }
+    img{
+     width: 92vw;
+     height: 120vh;
+    
+}
+    
+
+}
+@media screen  and (min-width: 207px) and (max-width: 220px){
+    body {
+        background-color: lightgreen;
+    }
+    :root{
+        font-size:5px;
+    }
+   
+     .column {
+        flex: 100%;
+    }
+    img{
+     width: 92vw;
+     height: 120vh;
+    
+}
+    
+
+}
+@media screen and (max-width: 206px){
+    body {
+        background-color: lightgreen;
+    }
+    :root{
+        font-size:5px;
+    }
+   
+     .column {
+        flex: 100%;
+    }
+    img{
+     width: 90vw;
+     height: 120vh;
+    
+}
+    }
